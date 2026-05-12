@@ -1,0 +1,99 @@
+/* Navbar */
+.job-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Logo + Text */
+  .job-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .job-logo-img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .job-logo-text {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Navbar Links */
+  .job-nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .job-nav-links li {
+    cursor: pointer;
+    font-weight: 500;
+    color: #555;
+    transition: color 0.2s ease;
+  }
+  
+  .job-nav-links li:hover,
+  .job-nav-links .active {
+    color: #007bff;
+  }
+  
+  /* Remove underline and default link styles */
+  .job-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+  }
+  
+  .job-nav-item:hover {
+    text-decoration: none; /* Ensure no underline on hover */
+    color: inherit; /* Prevent color change */
+  }
+  
+  .job-icon {
+    font-size: 24px; /* Adjust icon size */
+    margin-bottom: 5px; /* Add spacing between icon and text */
+    color: #555;
+    transition: color 0.2s ease;
+  }
+  
+  .job-nav-links li:hover .job-icon,
+  .job-nav-links .active .job-icon {
+    color: #007bff;
+  }
+  
+  /* User Box */
+  .job-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .job-logout-btn {
+    padding: 6px 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  .job-logout-btn:hover {
+    background-color: #0056b3;
+  }

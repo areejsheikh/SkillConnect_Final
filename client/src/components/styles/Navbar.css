@@ -1,0 +1,84 @@
+/* Import the Hind Guntur font */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Hind Guntur', sans-serif; /* Apply Hind Guntur font globally */
+}
+
+.custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: #F8F8F8; /* Off-white color for the navbar */
+    opacity: 0.9; /* Slightly transparent effect */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-logo {
+    font-weight: bold;
+    color: black;
+    font-size: 1.7rem;
+    background-color: #F8F8F8; /* Off-white color for the navbar */
+    opacity: 0.9; /* Slightly transparent effect */
+    padding: 0.5rem; /* Optional: Add padding around the logo */
+    border-radius: 5px; /* Optional: Add rounded corners for better aesthetics */
+    display: flex;
+    align-items: center; /* Adjust alignment to center it vertically */
+    gap: 0.5rem; /* Add spacing between the image and text */
+    position: relative; /* Add position to make z-index effective */
+    z-index: 1; /* Ensure the logo is above the image */
+}
+
+.custom-logo-image {
+    background-color: #F8F8F8; /* Off-white color for the navbar */
+    opacity: 0.9; /* Slightly transparent effect */
+    border-radius: 5px; /* Optional: Add rounded corners to the image */
+    padding: 0.1rem; /* Decrease padding around the image */
+    width: 70px; /* Decrease the size of the image */
+    height: 60px; /* Maintain aspect ratio by setting height */
+    margin-left: -26px;
+    margin-right: -9px;
+}
+
+.custom-nav-links {
+    list-style: none;
+    display: flex;
+    gap: 4.4rem;
+    flex: 1; /* Allow the nav-links to take up available space */
+    justify-content: center; /* Center the nav-links */
+    align-items: center; /* Ensure nav-links are vertically aligned */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    font-size: 1.2rem; /* Adjust font size for better visibility */
+    font-weight: 470; /* Adjust font weight for better visibility */
+}
+
+.custom-nav-links li {
+    cursor: pointer;
+}
+
+.custom-auth-buttons {
+    display: flex;
+    gap: 2rem; /* Add spacing between Login and Sign Up */
+}
+
+.custom-auth-buttons button {
+    background: none; /* Remove button background */
+    border: none; /* Remove button border */
+    color: black; /* Match the color of other navbar items */
+    font-size: 1rem; /* Match the font size of other navbar items */
+    cursor: pointer; /* Add pointer cursor for interactivity */
+    padding: 0; /* Remove default button padding */
+    display: inline-block; /* Ensure the text stays on one line */
+    align-items: center; /* Ensure buttons are vertically aligned */
+    font-weight: 470; /* Adjust font weight for better visibility */
+    white-space: nowrap; /* Prevent text wrapping */
+    text-decoration: none; /* Remove underline or other text decorations */
+    transition: transform 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.custom-auth-buttons button:hover {
+    transform: scale(1.1); /* Slightly increase the size of the text */
+    color: white; /* Change color on hover */
+}

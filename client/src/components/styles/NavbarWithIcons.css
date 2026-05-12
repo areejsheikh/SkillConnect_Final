@@ -1,0 +1,79 @@
+.auth-icons {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Add space between the icons */
+}
+
+.custom-icon {
+    font-size: 1.5rem; /* Default size for icons */
+    color: black; /* Icon color */
+    cursor: pointer;
+}
+
+.custom-icon.profile-icon {
+    font-size: 3rem; /* Increased size for the profile icon */
+}
+
+.custom-icon:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Import the Hind Guntur font */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Hind Guntur', sans-serif; /* Apply Hind Guntur font globally */
+}
+
+.custom-navbar-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: #F8F8F8; /* Off-white color for the navbar */
+    opacity: 0.9; /* Slightly transparent effect */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-logo-icons {
+    font-weight: bold;
+    color: black;
+    font-size: 1.7rem;
+    background-color: #F8F8F8; /* Off-white color for the navbar */
+    opacity: 0.9; /* Slightly transparent effect */
+    padding: 0.5rem; /* Optional: Add padding around the logo */
+    border-radius: 5px; /* Optional: Add rounded corners for better aesthetics */
+    display: flex;
+    align-items: center; /* Adjust alignment to center it vertically */
+    gap: 0.5rem; /* Add spacing between the image and text */
+    position: relative; /* Add position to make z-index effective */
+    z-index: 1; /* Ensure the logo is above the image */
+}
+
+.custom-logo-image-icons {
+    background-color: #F8F8F8; /* Off-white color for the navbar */
+    opacity: 0.9; /* Slightly transparent effect */
+    border-radius: 5px; /* Optional: Add rounded corners to the image */
+    padding: 0.1rem; /* Decrease padding around the image */
+    width: 70px; /* Decrease the size of the image */
+    height: 60px; /* Maintain aspect ratio by setting height */
+    margin-left: -26px;
+    margin-right: -9px;
+}
+
+.custom-nav-links-icons {
+    list-style: none;
+    display: flex;
+    gap: 4.4rem;
+    flex: 1; /* Allow the nav-links to take up available space */
+    justify-content: center; /* Center the nav-links */
+    align-items: center; /* Ensure nav-links are vertically aligned */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    font-size: 1.2rem; /* Adjust font size for better visibility */
+    font-weight: 470; /* Adjust font weight for better visibility */
+}
+
+.custom-nav-links-icons li {
+    cursor: pointer;
+}

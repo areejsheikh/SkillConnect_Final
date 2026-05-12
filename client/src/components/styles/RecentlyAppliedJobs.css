@@ -1,0 +1,98 @@
+.recently-applied {
+    background: #fff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+    margin-top: 30px;
+  }
+  
+  .recently-applied h3 {
+    font-size: 22px;
+    margin-bottom: 24px;
+    color: #111;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background: #f5f6fa;
+  }
+  
+  thead th {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+    color: #555;
+    padding: 14px 20px;
+  }
+  
+  tbody td {
+    padding: 18px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .job-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .job-logo {
+    width: 50px;
+    height: 50px;
+    background: #e8ecf4;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #556ee6;
+  }
+  
+  .job-title {
+    font-weight: 600;
+    color: #111;
+    font-size: 16px;
+  }
+  
+  .job-meta {
+    font-size: 12px;
+    color: #888;
+    margin-top: 4px;
+  }
+  
+  .job-type {
+    background: #eaf4ff;
+    color: #556ee6;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 10px;
+  }
+  
+  .status-active {
+    color: #28a745;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .view-details-btn {
+    background: #556ee6;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .view-details-btn:hover {
+    background: #4455cc;
+  }
+  

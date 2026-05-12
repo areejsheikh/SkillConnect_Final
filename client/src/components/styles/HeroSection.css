@@ -1,0 +1,43 @@
+/* Import the Hind Guntur font */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@400;500;600;700&display=swap');
+
+.hero {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Hind Guntur', sans-serif; /* Apply Hind Guntur font */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/public/workplace.png') center/cover no-repeat;
+    filter: blur(1.5px); /* Apply blur to the background image */
+    z-index: -1; /* Ensure the background stays behind the content */
+}
+
+.hero-overlay {
+  text-align: center;
+  color: white;
+  z-index: 1; /* Ensure the text is above the blurred background */
+  font-size: 2rem; /* Make the text big */
+  text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.7); /* Add shadow to the text */
+}
+
+.hero-overlay button {
+  margin-top: -10rem; /* Reduce the top margin to bring it up */
+  padding: 0.75rem 2rem; /* Keep the horizontal padding the same */
+  background-color: #a0522d; /* A shade that combines brown and orange */
+  border: none;
+  color: white;
+  font-size: 1rem; /* Increase font size for better visibility */
+  cursor: pointer;
+  font-weight: 500;
+  font-family: 'Hind Guntur', sans-serif; /* Apply Hind Guntur font to the button */
+}

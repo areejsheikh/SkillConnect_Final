@@ -1,0 +1,46 @@
+.custom-sidebar {
+    width: 250px; /* Set a fixed width for the sidebar */
+    max-width: 250px; /* Ensure it doesn't grow beyond this width */
+    background: #fff;
+    height: calc(100vh - 100px); /* Adjust height to stop before the footer */
+    position: relative; /* Sidebar scrolls with the page */
+    padding: 1.5rem 1rem; /* Adjust padding for a more compact look */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+    z-index: 1; /* Ensure it stays above other elements if necessary */
+    overflow-y: auto; /* Add scrolling if the content overflows */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.custom-sidebar-nav ul,
+.custom-sidebar-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Remove any default margin */
+}
+
+.custom-sidebar-nav li,
+.custom-sidebar-footer li {
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.custom-sidebar-link {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Default text color */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.custom-sidebar-link:hover {
+    color: #556ee6; /* Hover color */
+}
+
+.custom-sidebar-link.active {
+    color: #556ee6; /* Active link color */
+    font-weight: bold;
+}
+
+.custom-sidebar-footer li {
+    color: #666; /* Footer text color */
+    font-size: 14px;
+}

@@ -1,0 +1,63 @@
+.job-details {
+    padding: 2rem;
+    background-color: white;
+    margin-top: 0; /* Ensure no extra margin at the top */
+}
+  .breadcrumb {
+    font-size: 0.85rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .job-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .company-logo img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .job-title-section h2 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  
+  .company-name {
+    color: #555;
+    margin: 0.3rem 0;
+  }
+  
+  .full-time-tag, .featured-tag {
+    background-color: #28a745;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .featured-tag {
+    background-color: #ff6f00;
+  }
+  
+  .job-description {
+    margin-top: 2rem;
+  }
+  
+  .job-description h3, h4 {
+    margin-top: 1.5rem;
+  }
+  
+  .job-description ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .job-description p {
+    color: #555;
+  }
+  

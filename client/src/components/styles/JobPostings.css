@@ -1,0 +1,259 @@
+/* General Styling */
+.job-postings {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Section */
+.job-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: none;
+    font-size: 1rem;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.filter-btn,
+.find-btn {
+    padding: 0.75rem 1.25rem;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    background-color: #f4f4f4;
+    color: #333;
+    border-left: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.find-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.filter-btn:hover,
+.find-btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+/* Job Grid */
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ensure 4 jobs per row */
+    gap: 1.5rem;
+    justify-content: center; /* Center the grid items */
+}
+
+/* Job Card */
+.job-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    max-width: 350px; /* Set a maximum width for job cards */
+    margin: 0 auto; /* Center the card within its grid cell */
+    width: 100%; /* Ensure the card takes up the full width of its grid cell */
+}
+
+.job-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.job-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+    font-weight: bold;
+}
+
+.salary {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.company {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.location {
+    font-size: 0.9rem;
+    color: #777;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.bookmark {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #888;
+    transition: color 0.3s ease;
+}
+
+.bookmark:hover {
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .job-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .input-group {
+        width: 100%;
+    }
+
+    .filter-btn,
+    .find-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .job-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust for smaller screens */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .job-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 jobs per row for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .job-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 jobs per row for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .job-grid {
+        grid-template-columns: 1fr; /* 1 job per row for very small screens */
+    }
+}
+/* Filter Modal Styling */
+.filter-modal {
+    position: absolute;
+    bottom: 0%; /* Adjusted to make it closer to the button */
+    right: 0;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 300px;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+.filter-modal h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.filter-group {
+    margin-bottom: 1.5rem;
+}
+
+.filter-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.filter-group select:focus {
+    border-color: #007bff;
+}
+
+.apply-filters-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-filters-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Fade-in animation for the modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

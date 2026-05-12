@@ -1,0 +1,111 @@
+.is-page {
+  background: rgba(0,0,0,0.5);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.is-modal {
+  width: 900px;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.is-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.is-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.is-close {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.is-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.is-row {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.is-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.is-field label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.is-field input,
+.is-field select,
+.custom-datepicker,
+textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.is-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.is-actions button {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button.cancel-btn {
+  background-color: #eee;
+  color: black;
+}
+
+button.confirm-btn {
+  background-color: #000;
+  color: white;
+}
+
+.is-modal {
+  margin: 0 auto;
+  position: relative;
+  left: 0;
+  right: 0;
+}

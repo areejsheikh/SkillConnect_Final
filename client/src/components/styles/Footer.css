@@ -1,0 +1,46 @@
+.footer {
+    background-color: #F8F8F8; /* Off-white color for the navbar */
+    color: white;
+    padding: 3rem 2rem;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  .footer-logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #f9a825;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: black;
+  }
+  
+  .footer-column p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-column p:hover {
+    color: black;
+  }
+  

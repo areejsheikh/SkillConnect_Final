@@ -1,0 +1,160 @@
+.provider-profile-manage {
+  display: flex;
+  flex-direction: column; /* Stack navbar on top and content below */
+  font-family: 'Hind', sans-serif;
+  background: #fff;
+  min-height: 100vh;
+}
+
+
+.content-wrapper {
+  display: flex;
+  flex: 1; /* Allow the content to take up the remaining space */
+}
+
+.sidebar {
+  width: 220px;
+  background: #f7f7f7;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+}
+
+.logo-text {
+  font-weight: 600;
+  font-size: 18px;
+  color: #333;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  margin: 20px 0;
+  font-size: 15px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar-menu i {
+  margin-right: 10px;
+  color: #666;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.profile-header h2 {
+  flex: 1;
+  text-align: center;
+  font-weight: 600;
+}
+
+.user-icon {
+  margin-right: 15px;
+  color: #555;
+}
+
+.back-button,
+.logout-button {
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+}
+
+.provider-profile-form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  padding-right: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.icon-input {
+  position: absolute;
+  right: 10px;
+  top: 35px;
+  color: #888;
+  font-size: 14px;
+}
+
+.icon-success {
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  color: green;
+}
+
+.button-group {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cancel-button,
+.save-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background: #e0e0e0;
+}
+
+.save-button {
+  background: #555;
+  color: white;
+}

@@ -1,0 +1,184 @@
+.job-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: white;
+    margin-top: 0;
+  }
+  
+  .sidebar-actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .bookmark-btn {
+    background-color: #f0f4f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.bookmark-btn:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.bookmark-icon {
+    font-size: 1.2rem;
+}
+  
+  .apply-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .salary-location-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .salary-info, .location-info {
+    flex: 1;
+  }
+  
+  .salary-info {
+    text-align: center;
+  }
+  
+  .salary-info .salary-amount {
+    color: #28a745;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0.2rem 0;
+  }
+  
+  .salary-info span {
+    font-size: 0.8rem;
+    color: #777;
+  }
+  
+  .location-info {
+    text-align: center;
+  }
+  
+  .divider {
+    width: 1px;
+    height: 60px;
+    background-color: white;
+  }
+  
+  .location-info p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .job-overview-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.job-overview-card h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two items per row */
+    gap: 1rem; /* Space between items */
+}
+
+.overview-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+  
+.overview-item .icon {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.overview-item p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.overview-item span {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #333;
+}
+  
+  .icon {
+    color: #007bff;
+    font-size: 1.2rem;
+  }
+  
+  .share-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+  
+  .share-card h4 {
+    margin-bottom: 1rem;
+  }
+  
+  .share-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .share-buttons button {
+    background-color: #f0f4f8;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .copy-link-btn {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  

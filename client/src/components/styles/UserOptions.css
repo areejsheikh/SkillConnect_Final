@@ -1,0 +1,85 @@
+.user-options {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 2rem;
+    gap: 2rem;
+}
+
+.user-card {
+    flex: 1;
+    border-radius: 12px;
+    color: #111;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.user-card .content {
+    padding: 2rem;
+    /* Removed the transparent background */
+    background: none;
+    border-radius: 12px;
+    margin: 1rem;
+    max-width: 60%;
+}
+
+.user-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.user-card p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.user-card button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #0052cc;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.user-card button:hover {
+    background-color: #f1f1f1;
+}
+
+.arrow {
+    font-size: 1rem;
+}
+
+.candidate {
+    background-image: url('/public/laptop1.jpg');
+}
+
+.employer {
+    background-image: url('/public/employer1.jpg');
+    color: white;
+}
+
+
+
+.candidate h3 {
+    color: white; /* Make the heading white for the candidate section */
+}
+
+.candidate p {
+    color: white; /* Make the paragraph white for the candidate section */
+}
+
+.employer h3 {
+    color: black; /* Make the heading black for the employer section */
+}

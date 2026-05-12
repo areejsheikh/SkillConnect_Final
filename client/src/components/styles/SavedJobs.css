@@ -1,0 +1,129 @@
+.saved-jobs-container {
+    padding: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .saved-jobs-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .saved-jobs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .saved-job-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  
+  .saved-job-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+  }
+  
+  .saved-job-company {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .company-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+  }
+  
+  .company-name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .company-location {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .saved-job-details {
+    flex: 1;
+    padding: 0 16px;
+  }
+  
+  .job-role {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .job-meta {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .job-type {
+    background-color: #e6f4ea;
+    color: #34a853;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+  
+  .job-salary {
+    color: #666;
+  }
+  
+  .saved-job-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .apply-now-button {
+    background-color: #3b82f6;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .apply-now-button:hover {
+    background-color: #2563eb;
+  }
+  
+  .bookmark-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f3f4f6;
+    color: #333;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .bookmark-button:hover {
+    background-color: #e5e7eb;
+    color: #3b82f6;
+  }
+  
+  .bookmark-icon {
+    font-size: 16px;
+  }

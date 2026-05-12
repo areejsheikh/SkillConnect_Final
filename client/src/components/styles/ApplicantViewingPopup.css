@@ -1,0 +1,188 @@
+/* Wrapper for the popup */
+.avp-wrapper {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  z-index: 999; /* Ensure it appears above other elements */
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+.avp-modal {
+  background: #fff;
+  width: 600px;
+  border-radius: 10px;
+  padding: 25px 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow-y: auto;
+  max-height: 90vh; /* Prevent the modal from exceeding the viewport height */
+  cursor: default;
+  z-index: 1001; /* Ensure it's above the navbar */
+
+  /* Center the modal
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+/* Header section (drag handle) */
+.avp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  cursor: move;
+}
+
+.avp-header h2 {
+  font-size: 20px;
+}
+
+.avp-close {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Profile section */
+.avp-profile-section {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 20px;
+}
+
+.avp-profile-section img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+/* Fields section */
+.avp-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.avp-field-group {
+  display: flex;
+  gap: 15px;
+}
+
+.avp-field-group div,
+.avp-email-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.avp-fields label {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.avp-fields input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Credentials section */
+.avp-credentials {
+  margin-top: 25px;
+}
+
+.avp-credentials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.avp-credentials-header > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avp-company-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.avp-company-name {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.avp-location {
+  font-size: 12px;
+  color: #666;
+}
+
+.avp-role-title {
+  font-weight: bold;
+}
+
+.avp-experience {
+  font-size: 12px;
+  color: #666;
+}
+
+.avp-credentials-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.avp-credential-item {
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Buttons section */
+.avp-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.avp-reject {
+  background-color: #ff4d4f;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.avp-reject:hover {
+  background-color: #e60000;
+}
+
+.avp-interview {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.avp-interview:hover {
+  background-color: #0056b3;
+}
