@@ -1,0 +1,44 @@
+.section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #fff;
+  }
+  .privacy-toggle {
+    margin-bottom: 10px;
+  }
+  .privacy-toggle label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .save-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .save-button:hover {
+    background-color: #218838;
+  }
+  .delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .delete-button:hover {
+    background-color: #c82333;
+  }
